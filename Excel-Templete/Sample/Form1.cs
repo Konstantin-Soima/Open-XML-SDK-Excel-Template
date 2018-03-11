@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Sample
 {
     public partial class Form1 : Form
@@ -16,6 +16,10 @@ namespace Sample
         {
             InitializeComponent();
         }
-        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ExcelTemplate et = new ExcelTemplate();
+        }
     }
 }
